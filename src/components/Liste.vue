@@ -53,6 +53,8 @@ export default {
                 this.liste.push(newNote);
                 localStorage.setItem('listeNotes', JSON.stringify(this.liste));
             }
+
+            this.note = '';
         },
         supprimer(note) {
             this.liste = this.liste.filter((liste) => liste.id !== note.id);
